@@ -94,7 +94,7 @@ def on_forever():
     # wait for sample period to pass (reserve 104 ms for calculations)
     for i in range(400):
         # fill buffer with 400 sample values:
-        audioBuffer.append(pins.analog_read_pin(AnalogPin.P0))
+        audioBuffer.append(pins.analog_read_pin(AnalogPin.P1))
         
         # read microphone pin
         control.wait_micros(250 - 105)

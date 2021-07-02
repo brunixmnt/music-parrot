@@ -42,8 +42,7 @@ basic.forever(function on_forever() {
     //  wait for sample period to pass (reserve 104 ms for calculations)
     for (let i = 0; i < 400; i++) {
         //  fill buffer with 400 sample values:
-        audioBuffer.push(pins.analogReadPin(AnalogPin.P0))
-        pins.analogReadPin(AnalogPin.P0)
+        audioBuffer.push(pins.analogReadPin(AnalogPin.P1))
         //  read microphone pin
         control.waitMicros(250 - 105)
     }
